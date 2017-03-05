@@ -1,0 +1,1 @@
+index.jsでglobalに生やされたscalajsのモジュールをrequireで取れるようにしてやる

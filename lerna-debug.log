@@ -1,0 +1,42 @@
+lerna(verbose) GitUtilities.isInitialized    ()
+lerna(verbose) GitUtilities.isInitialized    () => true
+lerna(verbose) GitUtilities.getTopLevelDirectory()
+lerna(verbose) GitUtilities.getTopLevelDirectory() => "."
+lerna(verbose) FileSystemUtilities.existsSync("./lerna.json")
+lerna(verbose) FileSystemUtilities.existsSync("./lerna.json") => true
+lerna(verbose) FileSystemUtilities.readFileSync("./lerna.json")
+lerna(verbose) FileSystemUtilities.readFileSync("./lerna.json") => "{\n  \"lerna\": \"2.0.0-beta.38\",\n  \"packages\": [\n    \"packages/*\"\n  ],\n  \"version\": \"0.0.0\"\n}"
+lerna(verbose) FileSystemUtilities.existsSync("./package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./package.json") => true
+lerna(verbose) FileSystemUtilities.readFileSync("./package.json")
+lerna(verbose) FileSystemUtilities.readFileSync("./package.json") => "{\n  \"devDependencies\": {\n    \"lerna\": \"2.0.0-beta.38\",\n    \"tslint\": \"^4.5.1\",\n    \"typescript\": \"^2.2.1\"\n  }\n}"
+lerna(info)    Lerna v2.0.0-beta.38
+lerna(verbose) FileSystemUtilities.existsSync("./package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./lerna.json")
+lerna(verbose) FileSystemUtilities.existsSync("./lerna.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./VERSION")
+lerna(verbose) FileSystemUtilities.existsSync("./VERSION") => false
+lerna(verbose) FileSystemUtilities.existsSync("./packages/kotlinModule/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./packages/kotlinModule/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./packages/mainApp/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./packages/mainApp/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./packages/subModule/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./packages/subModule/package.json") => true
+lerna(verbose) Attempting running BootstrapCommand.initialize
+lerna(verbose) Successfully ran BootstrapCommand.initialize
+lerna(verbose) Attempting running BootstrapCommand.execute
+lerna(info)    Bootstrapping 3 packages
+lerna(info)    Preinstalling packages
+lerna(error)   Errored while running BootstrapCommand.execute
+    RangeError: Invalid array length
+        at ProgressBar.render (/Users/ryota/.nvm/versions/node/v6.1.0/lib/node_modules/lerna/node_modules/progress/lib/node-progress.js:131:14)
+        at ProgressBar.tick (/Users/ryota/.nvm/versions/node/v6.1.0/lib/node_modules/lerna/node_modules/progress/lib/node-progress.js:86:8)
+        at ProgressBarController.tick (/Users/ryota/.nvm/versions/node/v6.1.0/lib/node_modules/lerna/lib/progressBar.js:60:18)
+        at /Users/ryota/.nvm/versions/node/v6.1.0/lib/node_modules/lerna/lib/commands/BootstrapCommand.js:134:32
+        at Package.runScript (/Users/ryota/.nvm/versions/node/v6.1.0/lib/node_modules/lerna/lib/Package.js:61:9)
+        at /Users/ryota/.nvm/versions/node/v6.1.0/lib/node_modules/lerna/lib/commands/BootstrapCommand.js:133:15
+        at /Users/ryota/.nvm/versions/node/v6.1.0/lib/node_modules/lerna/node_modules/async/lib/async.js:718:13
+        at replenish (/Users/ryota/.nvm/versions/node/v6.1.0/lib/node_modules/lerna/node_modules/async/lib/async.js:319:21)
+        at /Users/ryota/.nvm/versions/node/v6.1.0/lib/node_modules/lerna/node_modules/async/lib/async.js:330:15
+        at _parallel (/Users/ryota/.nvm/versions/node/v6.1.0/lib/node_modules/lerna/node_modules/async/lib/async.js:717:9)

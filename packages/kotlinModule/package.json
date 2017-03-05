@@ -1,0 +1,20 @@
+{
+  "name": "kotlinModule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "out/production/kotlinModule/kotlinModule.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^15.0.14",
+    "@types/react-dom": "^0.14.23",
+    "kotlin": ">=1.0.4-eap-111"
+  },
+  "devDependencies": {
+    "ts2kt": "0.0.12"
+  }
+}
